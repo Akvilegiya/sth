@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Strange Vibes — Странные дела</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Monoton&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="logo" href="#">Strange Vibes</a>
+            <nav class="nav" id="nav">
+                <a href="#hero">Главная</a>
+                <a href="#episodes">Эпизоды</a>
+                <a href="#characters">Персонажи</a>
+                <a href="#about">О сайте</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <h1 class="hero-title glitch" data-text="СТРАННЫЕ ДЕЛА">СТРАННЫЕ ДЕЛА</h1>
+                <p class="hero-sub">Неоновый фан-сайт. Музыка 80-х, тайны и атмосфера маленького городка.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" id="playTrailer" data-trailer="hNCmb-4oXJA">Смотреть
+                        трейлер</button>
+                    <a class="btn btn-ghost" href="#episodes">Эпизоды</a>
+                </div>
+                <div class="hero-cards">
+                    <article class="card spotlight">
+                        <h3>Атмосфера</h3>
+                        <p>Неон, туман и ретро — вдохновляйся лбом-до-пятки.</p>
+                    </article>
+                    <article class="card spotlight">
+                        <h3>Персонажи</h3>
+                        <p>Карты персонажей с интерактивом и краткими описаниями.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="episodes" class="section">
+            <div class="container">
+                <h2 class="section-title">Лучшие эпизоды</h2>
+                <div class="grid episodes-grid">
+                    <article class="ep-card">
+                        <div class="ep-thumb" style="background:linear-gradient(120deg,#2b2b6b,#ff005c)"></div>
+                        <div class="ep-body">
+                            <h3>Эпизод 1 — Тайна</h3>
+                            <p>Короткое описание эпизода: туман, исчезновение и первые подсказки.</p>
+                            <div class="ep-meta">
+                                <span>Сезон 1</span>
+                                <span>45 мин</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ep-card">
+                        <div class="ep-thumb" style="background:linear-gradient(120deg,#061a40,#ff8a00)"></div>
+                        <div class="ep-body">
+                            <h3>Эпизод 5 — Странная ночь</h3>
+                            <p>Сильные эмоции и момент, который всё меняет.</p>
+                            <div class="ep-meta">
+                                <span>Сезон 2</span>
+                                <span>52 мин</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ep-card">
+                        <div class="ep-thumb" style="background:linear-gradient(120deg,#0f2540,#7d00ff)"></div>
+                        <div class="ep-body">
+                            <h3>Эпизод 8 — Кульминация</h3>
+                            <p>Кульминационный момент: борьба с неизвестным и большая цена.</p>
+                            <div class="ep-meta">
+                                <span>Сезон 3</span>
+                                <span>55 мин</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="characters" class="section section--dark">
+            <div class="container">
+                <h2 class="section-title">Персонажи</h2>
+                <div class="grid chars-grid">
+                    <div class="char-card" data-tilt>
+                        <div class="char-pic" style="background:linear-gradient(180deg,#ff6b6b,#2b2b6b)"></div>
+                        <h4>Один из героев</h4>
+                        <p class="muted">Краткая заметка о характере и роли.</p>
+                    </div>
+
+                    <div class="char-card" data-tilt>
+                        <div class="char-pic" style="background:linear-gradient(180deg,#ffd166,#3a1c71)"></div>
+                        <h4>Таинственный персонаж</h4>
+                        <p class="muted">Интрига, предыстория и мотивация.</p>
+                    </div>
+
+                    <div class="char-card" data-tilt>
+                        <div class="char-pic" style="background:linear-gradient(180deg,#00d2ff,#3a1c71)"></div>
+                        <h4>Мудрец</h4>
+                        <p class="muted">Понимает мир больше, чем кажется.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">О сайте</h2>
+                <p>Фан-страница — цель показать атмосферу: адаптивный дизайн, анимации без лишних библиотек, и простая
+                    структура для дальнейшего расширения.</p>
+                <div class="controls">
+                    <button class="btn" id="toggleVibe">Включить glitch-эффект</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <small>Fan-made — неофициальный сайт. Все права на серию принадлежат правообладателям.</small>
+            <div class="socials">
+                <a href="#" aria-label="twitter">TW</a>
+                <a href="#" aria-label="instagram">IG</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Trailer modal -->
+    <div id="trailerModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Трейлер">
+            <button class="modal-close" id="modalClose" aria-label="Закрыть">✕</button>
+            <div class="modal-content" id="modalContent">
+                <!-- iframe вставится сюда скриптом -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
